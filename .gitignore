@@ -1,0 +1,6 @@
+
+node_modules/
+deu.traineddata
+images/
+output/
+package-lock.json
