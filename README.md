@@ -1,12 +1,6 @@
-# Reader
-
-
-
 ## Installation
 
 Install [Node.js](https://nodejs.org), clone the [repository](https://codeload.github.com/xRealNeon/Reader/zip/master) and run `npm i` thats it!
-
-
 
 ## Usage
 
