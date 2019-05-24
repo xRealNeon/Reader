@@ -4,7 +4,7 @@ Install [Node.js](https://nodejs.org), clone the [repository](https://codeload.g
 
 ## Usage
 
-You put your images in the `images` folder than run `npm start`.
+Put your images in the `images` folder than run `npm start`.
 
 
 
