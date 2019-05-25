@@ -11,7 +11,9 @@ const gtts = require('node-gtts')(config.ttslang);
 
 fs.readdir(path.join(__dirname, '/images/'), function (err, files) {
     files.forEach(function (file) {
-        recognize(file);
+        if (file != ".gitkeep") {
+            recognize(file);
+        }
     });
 });
 
