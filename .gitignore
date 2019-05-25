@@ -4,4 +4,4 @@ images/*.png
 output/*.txt
 output/*.wav
 package-lock.json
-deu.traineddata
+*.traineddata
