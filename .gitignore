@@ -1,4 +1,7 @@
 
 node_modules/
-deu.traineddata
+images/*.png
+output/*.txt
+output/*.wav
 package-lock.json
+deu.traineddata
