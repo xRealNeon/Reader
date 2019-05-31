@@ -1,10 +1,15 @@
 ## Installation
 
-Install [Node.js](https://nodejs.org), clone the [repository](https://codeload.github.com/xRealNeon/Reader/zip/master) and run `npm i` thats it!
+1. Install [Node.js](https://nodejs.org) and [Git](https://git-scm.com/downloads).
+2. Paste this in your command line!
+```
+git clone https://github.com/xRealNeon/Reader.git && cd Reader && npm i
+```
 
 ## Usage
 
-Put your images in the `images` folder than run `npm start`.
+1. Put your images in the `images` folder.
+2. Run `npm start`.
 
 
 
