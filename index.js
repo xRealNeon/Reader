@@ -5,15 +5,31 @@ const {
 } = require('tesseract.js');
 const tessWorker = new TesseractWorker();
 
-var config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json')));
+var config = {
+    "tesseractlang": "deu",
+    "ttslang": "de"
+};
+
+if (fs.existsSync("config.json")) {
+    config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json')));
+} else {
+    fs.writeFileSync(path.join(__dirname, 'config.json'), JSON.stringify(config));
+    console.log("Config created put your images in the /images folder");
+}
 
 const gtts = require('node-gtts')(config.ttslang);
 
+if (!fs.existsSync("images")) {
+    fs.mkdirSync("images");
+}
+
+if (!fs.existsSync("output")) {
+    fs.mkdirSync("output");
+}
+
 fs.readdir(path.join(__dirname, '/images/'), function (err, files) {
     files.forEach(function (file) {
-        if (file != ".gitkeep") {
-            recognize(file);
-        }
+        recognize(file);
     });
 });
 

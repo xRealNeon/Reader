@@ -5,3 +5,5 @@ output/*.txt
 output/*.wav
 package-lock.json
 *.traineddata
+*.exe
+*.bat
