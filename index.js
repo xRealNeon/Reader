@@ -10,6 +10,12 @@ var config = {
     "ttslang": "de"
 };
 
+if (process.platform == 'win32') {
+    process.title = "Reader";
+} else {
+    process.stdout.write('\x1b]2;Reader\x1b\x5c');
+}
+
 if (fs.existsSync("config.json")) {
     config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json')));
 } else {
@@ -29,7 +35,9 @@ if (!fs.existsSync("output")) {
 
 fs.readdir(path.join(__dirname, '/images/'), function (err, files) {
     files.forEach(function (file) {
-        recognize(file);
+        if (!file.includes(".gitkeep")) {
+            recognize(file);
+        }
     });
 });
 
