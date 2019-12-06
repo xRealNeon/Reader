@@ -16,7 +16,6 @@ if (process.platform == 'win32') {
     process.stdout.write('\x1b]2;Reader\x1b\x5c');
 }
 
-
 if (fs.existsSync("config.json")) {
     config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json')));
 } else {
