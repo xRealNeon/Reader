@@ -1,4 +1,4 @@
-## Installation
+## Setup Workspace
 
 1. Install [Node.js](https://nodejs.org) and [Git](https://git-scm.com/downloads).
 2. Paste this in your command line!
