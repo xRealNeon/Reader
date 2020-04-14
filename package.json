@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "build": "nexe"
   },
   "author": "NeoCode",
   "license": "MIT",
   "dependencies": {
     "node-gtts": "^2.0.2",
     "tesseract.js": "^2.0.0-alpha.7"
+  },
+  "devDependencies": {
+    "nexe": "^3.3.2"
   }
 }
